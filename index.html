@@ -8,13 +8,140 @@
     <meta name="keywords" content="borracharia móvel, borracharia curitiba, pneus, troca de pneus, borracharia 24h, auto socorro, pneu furado">
     <meta name="theme-color" content="#D32F2F">
     
-    <link rel="icon" type="image/png" href="assets/logo-borracharia-movel-completa_96accbcb.png">    
+    <link rel="icon" type="image/png" href="assets/logo-borracharia-movel-completa_96accbcb.png">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    
+    <!-- Premium Font: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
     <script type="module" crossorigin="" src="assets/index-C88p56Dd.js"></script>
     <link rel="stylesheet" crossorigin="" href="assets/index-GkIOROAX.css">
+
+    <style>
+      /* =====================================================
+         PREMIUM TYPOGRAPHY SYSTEM - Plus Jakarta Sans
+         ===================================================== */
+
+      * { box-sizing: border-box; }
+
+      /* Aplicar fonte premium em todo o site */
+      #root,
+      #root * {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont,
+          'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      /* =====================================================
+         HERO SECTION — Tipografia Premium
+         ===================================================== */
+
+      /* H1 principal da Hero */
+      [data-loc="client/src/pages/Home.tsx:168"] {
+        font-size: clamp(2.8rem, 6.5vw, 4.5rem) !important;
+        font-weight: 800 !important;
+        letter-spacing: -0.03em !important;
+        line-height: 1.02 !important;
+        text-shadow:
+          0 2px 30px rgba(0, 0, 0, 0.55),
+          0 1px 8px rgba(0, 0, 0, 0.35) !important;
+      }
+
+      /* GRADIENTE PREMIUM no span "Não Pode Esperar" */
+      [data-loc="client/src/pages/Home.tsx:170"] {
+        background: linear-gradient(
+          135deg,
+          #ffffff   0%,
+          #ff7070  30%,
+          #d32f2f  65%,
+          #b71c1c 100%
+        ) !important;
+        -webkit-background-clip: text !important;
+        background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        color: transparent !important;
+        filter: drop-shadow(0 0 20px rgba(211, 47, 47, 0.50)) !important;
+        display: inline !important;
+      }
+
+      /* Subtítulo da hero mais elegante */
+      [data-loc="client/src/pages/Home.tsx:174"] {
+        font-size: 1.1rem !important;
+        font-weight: 400 !important;
+        letter-spacing: 0.01em !important;
+        line-height: 1.75 !important;
+        color: rgba(229, 231, 235, 0.93) !important;
+        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45) !important;
+      }
+
+      /* Overlay da hero — mais escuro para contraste premium */
+      [data-loc="client/src/pages/Home.tsx:163"] {
+        background: linear-gradient(
+          to right,
+          rgba(8, 8, 8, 0.93) 0%,
+          rgba(8, 8, 8, 0.70) 55%,
+          rgba(8, 8, 8, 0.38) 100%
+        ) !important;
+      }
+
+      /* Segundo overlay vertical sutil (profundidade cinema) */
+      [data-loc="client/src/pages/Home.tsx:156"] {
+        position: relative;
+      }
+      [data-loc="client/src/pages/Home.tsx:156"]::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.18) 0%,
+          transparent 35%,
+          rgba(0, 0, 0, 0.28) 100%
+        );
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      /* Stats da hero (MESMO DIA, QUALIFICADOS etc.) */
+      [data-loc="client/src/pages/Home.tsx:203"],
+      [data-loc="client/src/pages/Home.tsx:210"],
+      [data-loc="client/src/pages/Home.tsx:217"],
+      [data-loc="client/src/pages/Home.tsx:224"] {
+        font-weight: 700 !important;
+        letter-spacing: 0.03em !important;
+      }
+
+      /* =====================================================
+         HEADINGS GERAIS — mais impacto
+         ===================================================== */
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      /* =====================================================
+         RESPONSIVE — Mobile
+         ===================================================== */
+      @media (max-width: 640px) {
+        [data-loc="client/src/pages/Home.tsx:168"] {
+          font-size: clamp(1.9rem, 8.5vw, 2.7rem) !important;
+          line-height: 1.06 !important;
+          letter-spacing: -0.025em !important;
+        }
+
+        [data-loc="client/src/pages/Home.tsx:174"] {
+          font-size: 0.93rem !important;
+        }
+      }
+
+      @media (min-width: 641px) and (max-width: 1024px) {
+        [data-loc="client/src/pages/Home.tsx:168"] {
+          font-size: clamp(2.4rem, 5.5vw, 3.4rem) !important;
+        }
+      }
+    </style>
 </head>
 <body>
     <div id="root"></div>
