@@ -160,9 +160,16 @@
         width: 100% !important; margin-bottom: 10px !important;
         box-sizing: border-box !important; text-decoration: none !important;
       }
-      .inj-btn > *:not(.inj-row) { display: none !important; }
-      .inj-row { display: flex !important; align-items: center !important; width: 100% !important; gap: 10px !important; }
-
+      /* Esconde o texto e ícones originais do React para não duplicar */
+      .inj-btn > *:not(.inj-row) {
+        display: none !important;
+      }
+      .inj-row {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+        gap: 10px !important;
+      }
       .inj-red { background: linear-gradient(90deg, #dc2626, #991b1b) !important; border: none !important; box-shadow: 0 4px 18px rgba(220,38,38,0.4) !important; }
       .inj-dark { background: #0f0f0f !important; border: 1.5px solid #dc2626 !important; }
 
