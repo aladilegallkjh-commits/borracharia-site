@@ -139,24 +139,30 @@
       }
 
       /* ===== INJEÇÕES PREMIUM ===== */
-
-      /* Logo + nome */
-      .inj-logo-wrap { display: flex !important; align-items: center !important; }
-      .inj-company { display: flex; flex-direction: column; margin-left: 8px; }
-      .inj-company-name { color: #fff; font-weight: 900; font-size: 0.95rem; line-height: 1.1; text-transform: uppercase; }
-      .inj-company-name span { color: #ef4444; }
-      .inj-company-sub { color: #9ca3af; font-size: 0.55rem; font-weight: 600; letter-spacing: 1px; margin-top: 2px; text-transform: uppercase; }
+      
+      /* ===== HEADER: Nome da empresa ao lado da logo ===== */
+      /* Só aplica flex e exibe o nome injetado no mobile */
+      @media (max-width: 640px) {
+        .inj-logo-wrap { display: flex !important; align-items: center !important; }
+        .inj-company { display: flex; flex-direction: column; margin-left: 8px; }
+        .inj-company-name { color: #fff; font-weight: 900; font-size: 0.9rem; line-height: 1.1; text-transform: uppercase; }
+        .inj-company-name span { color: #ef4444; }
+        .inj-company-sub { color: #9ca3af; font-size: 0.5rem; font-weight: 600; letter-spacing: 1px; margin-top: 2px; text-transform: uppercase; }
+        img[src*="logo-borracharia"] { max-height: 40px !important; width: auto !important; }
+      }
+      
+      /* Oculta o nome injetado no desktop para não duplicar com o original */
+      @media (min-width: 641px) {
+        .inj-company { display: none !important; }
+      }
 
       /* Botão do header compacto */
       .inj-hbtn { font-size: 0.7rem !important; padding: 7px 10px !important; white-space: nowrap !important; }
 
-      /* Logo menor no mobile */
-      img[src*="logo-borracharia"] { max-height: 42px !important; width: auto !important; }
-
-      /* Botões Hero */
+      /* ===== BOTÕES HERO PREMIUM ===== */
       .inj-btn {
         display: flex !important; align-items: center !important;
-        padding: 12px 14px !important; border-radius: 10px !important;
+        padding: 10px 12px !important; border-radius: 10px !important;
         width: 100% !important; margin-bottom: 10px !important;
         box-sizing: border-box !important; text-decoration: none !important;
         font-size: 0 !important; /* Esconde nós de texto diretos do React */
@@ -173,14 +179,36 @@
       }
       .inj-red { background: linear-gradient(90deg, #dc2626, #991b1b) !important; border: none !important; box-shadow: 0 4px 18px rgba(220,38,38,0.4) !important; }
       .inj-dark { background: #0f0f0f !important; border: 1.5px solid #dc2626 !important; }
-
-      .inj-ico { flex: 0 0 26px; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; }
+      
+      /* Elementos internos dos botões (Mobile por padrão) */
+      .inj-ico { flex: 0 0 24px; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; }
       .inj-txt { flex: 1; display: flex; flex-direction: column; align-items: flex-start; overflow: hidden; }
-      .inj-ttl { color: #fff !important; font-weight: 800 !important; font-size: 0.85rem !important; line-height: 1.2 !important; white-space: nowrap !important; display: block !important; }
-      .inj-sub { color: #fca5a5 !important; font-size: 0.62rem !important; font-weight: 500 !important; white-space: nowrap !important; display: block !important; margin-top: 1px !important; }
+      .inj-ttl { color: #fff !important; font-weight: 800 !important; font-size: 0.82rem !important; line-height: 1.2 !important; white-space: nowrap !important; display: block !important; }
+      .inj-sub { color: #fca5a5 !important; font-size: 0.6rem !important; font-weight: 500 !important; white-space: nowrap !important; display: block !important; margin-top: 1px !important; }
       .inj-dark .inj-sub { color: #9ca3af !important; }
       .inj-arr { flex: 0 0 24px; width: 24px; height: 24px; background: rgba(255,255,255,0.15); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
       .inj-dark .inj-arr { background: rgba(255,255,255,0.08); }
+
+      /* Ajustes para Desktop (computador) */
+      @media (min-width: 641px) {
+        .inj-btn {
+          padding: 14px 18px !important;
+          border-radius: 12px !important;
+        }
+        .inj-ico { flex: 0 0 30px; width: 30px; height: 30px; }
+        .inj-ico svg { width: 28px !important; height: 28px !important; }
+        .inj-ttl { font-size: 1.05rem !important; }
+        .inj-sub { font-size: 0.72rem !important; margin-top: 2px !important; }
+        .inj-arr { flex: 0 0 28px; width: 28px; height: 28px; border-radius: 8px; }
+        .inj-arr svg { width: 18px !important; height: 18px !important; }
+      }
+
+      @media (max-width: 380px) {
+        .inj-ttl { font-size: 0.75rem !important; }
+        .inj-sub { font-size: 0.55rem !important; }
+        .inj-ico { flex: 0 0 20px; width: 20px; }
+        .inj-ico svg { width: 20px !important; height: 20px !important; }
+      }
     </style>
 </head>
 <body>
