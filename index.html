@@ -7,10 +7,10 @@
     <meta name="description" content="Borracharia Móvel - Atendimento 24 horas em Curitiba. Serviços profissionais de pneus para motos, carros, caminhões e ônibus. Borracharia móvel com resposta rápida.">
     <meta name="keywords" content="borracharia móvel, borracharia curitiba, pneus, troca de pneus, borracharia 24h, auto socorro, pneu furado">
     <meta name="theme-color" content="#D32F2F">
-    
+
     <!-- Open Graph / WhatsApp / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seusite.onrender.com/"> <!-- Substitua pelo seu domínio depois -->
+    <meta property="og:url" content="https://seusite.onrender.com/">
     <meta property="og:title" content="Borracharia Móvel - Atendimento 24 Horas em Curitiba">
     <meta property="og:description" content="Borracharia Móvel - Atendimento 24 horas em Curitiba. Socorro rápido para pneus furados de carros, motos e caminhões.">
     <meta property="og:image" content="https://seusite.onrender.com/assets/logo-borracharia-movel-completa_96accbcb.png">
@@ -22,7 +22,7 @@
     <meta property="twitter:description" content="Socorro rápido 24 horas em Curitiba para pneu furado.">
     <meta property="twitter:image" content="https://seusite.onrender.com/assets/logo-borracharia-movel-completa_96accbcb.png">
 
-    <!-- Schema.org (Google Local SEO - Ouro para Borracharias) -->
+    <!-- Schema.org (Google Local SEO) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -30,7 +30,7 @@
       "name": "Borracharia Móvel 24 Horas Curitiba",
       "image": "https://seusite.onrender.com/assets/logo-borracharia-movel-completa_96accbcb.png",
       "url": "https://seusite.onrender.com/",
-      "telephone": "", 
+      "telephone": "",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Curitiba",
@@ -44,9 +44,7 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
         "opens": "00:00",
         "closes": "23:59"
       },
@@ -58,22 +56,15 @@
     <link rel="icon" type="image/png" href="assets/logo-borracharia-movel-completa_96accbcb.png">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <!-- Premium Font: Plus Jakarta Sans -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
     <script type="module" crossorigin="" src="assets/index-C88p56Dd.js"></script>
     <link rel="stylesheet" crossorigin="" href="assets/index-GkIOROAX.css">
 
     <style>
-      /* =====================================================
-         PREMIUM TYPOGRAPHY SYSTEM - Plus Jakarta Sans
-         ===================================================== */
-
       * { box-sizing: border-box; }
 
-      /* Aplicar fonte premium em todo o site */
-      #root,
-      #root * {
+      #root, #root * {
         font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont,
           'Segoe UI', Roboto, Helvetica, Arial, sans-serif !important;
         -webkit-font-smoothing: antialiased;
@@ -81,77 +72,47 @@
         text-rendering: optimizeLegibility;
       }
 
-      /* =====================================================
-         HERO SECTION — Tipografia Premium
-         ===================================================== */
-
-      /* H1 principal da Hero */
       [data-loc="client/src/pages/Home.tsx:168"] {
         font-size: clamp(2.8rem, 6.5vw, 4.5rem) !important;
         font-weight: 800 !important;
         letter-spacing: -0.03em !important;
         line-height: 1.02 !important;
-        text-shadow:
-          0 2px 30px rgba(0, 0, 0, 0.55),
-          0 1px 8px rgba(0, 0, 0, 0.35) !important;
+        text-shadow: 0 2px 30px rgba(0,0,0,0.55), 0 1px 8px rgba(0,0,0,0.35) !important;
       }
 
-      /* GRADIENTE PREMIUM no span "Não Pode Esperar" */
       [data-loc="client/src/pages/Home.tsx:170"] {
-        background: linear-gradient(
-          135deg,
-          #ffffff   0%,
-          #ff7070  30%,
-          #d32f2f  65%,
-          #b71c1c 100%
-        ) !important;
+        background: linear-gradient(135deg, #ffffff 0%, #ff7070 30%, #d32f2f 65%, #b71c1c 100%) !important;
         -webkit-background-clip: text !important;
         background-clip: text !important;
         -webkit-text-fill-color: transparent !important;
         color: transparent !important;
-        filter: drop-shadow(0 0 20px rgba(211, 47, 47, 0.50)) !important;
+        filter: drop-shadow(0 0 20px rgba(211,47,47,0.50)) !important;
         display: inline !important;
       }
 
-      /* Subtítulo da hero mais elegante */
       [data-loc="client/src/pages/Home.tsx:174"] {
         font-size: 1.1rem !important;
         font-weight: 400 !important;
         letter-spacing: 0.01em !important;
         line-height: 1.75 !important;
-        color: rgba(229, 231, 235, 0.93) !important;
-        text-shadow: 0 1px 10px rgba(0, 0, 0, 0.45) !important;
+        color: rgba(229,231,235,0.93) !important;
+        text-shadow: 0 1px 10px rgba(0,0,0,0.45) !important;
       }
 
-      /* Overlay da hero — mais escuro para contraste premium */
       [data-loc="client/src/pages/Home.tsx:163"] {
-        background: linear-gradient(
-          to right,
-          rgba(8, 8, 8, 0.93) 0%,
-          rgba(8, 8, 8, 0.70) 55%,
-          rgba(8, 8, 8, 0.38) 100%
-        ) !important;
+        background: linear-gradient(to right, rgba(8,8,8,0.93) 0%, rgba(8,8,8,0.70) 55%, rgba(8,8,8,0.38) 100%) !important;
       }
 
-      /* Segundo overlay vertical sutil (profundidade cinema) */
-      [data-loc="client/src/pages/Home.tsx:156"] {
-        position: relative;
-      }
+      [data-loc="client/src/pages/Home.tsx:156"] { position: relative; }
       [data-loc="client/src/pages/Home.tsx:156"]::after {
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.18) 0%,
-          transparent 35%,
-          rgba(0, 0, 0, 0.28) 100%
-        );
+        background: linear-gradient(to bottom, rgba(0,0,0,0.18) 0%, transparent 35%, rgba(0,0,0,0.28) 100%);
         z-index: 2;
         pointer-events: none;
       }
 
-      /* Stats da hero (MESMO DIA, QUALIFICADOS etc.) */
       [data-loc="client/src/pages/Home.tsx:203"],
       [data-loc="client/src/pages/Home.tsx:210"],
       [data-loc="client/src/pages/Home.tsx:217"],
@@ -160,27 +121,15 @@
         letter-spacing: 0.03em !important;
       }
 
-      /* =====================================================
-         HEADINGS GERAIS — mais impacto
-         ===================================================== */
-      h1, h2, h3, h4, h5, h6 {
-        font-weight: 700;
-        letter-spacing: -0.01em;
-      }
+      h1, h2, h3, h4, h5, h6 { font-weight: 700; letter-spacing: -0.01em; }
 
-      /* =====================================================
-         RESPONSIVE — Mobile
-         ===================================================== */
       @media (max-width: 640px) {
         [data-loc="client/src/pages/Home.tsx:168"] {
           font-size: clamp(1.9rem, 8.5vw, 2.7rem) !important;
           line-height: 1.06 !important;
           letter-spacing: -0.025em !important;
         }
-
-        [data-loc="client/src/pages/Home.tsx:174"] {
-          font-size: 0.93rem !important;
-        }
+        [data-loc="client/src/pages/Home.tsx:174"] { font-size: 0.93rem !important; }
       }
 
       @media (min-width: 641px) and (max-width: 1024px) {
@@ -188,191 +137,100 @@
           font-size: clamp(2.4rem, 5.5vw, 3.4rem) !important;
         }
       }
+
+      /* ===== INJEÇÕES PREMIUM ===== */
+
+      /* Logo + nome */
+      .inj-logo-wrap { display: flex !important; align-items: center !important; }
+      .inj-company { display: flex; flex-direction: column; margin-left: 8px; }
+      .inj-company-name { color: #fff; font-weight: 900; font-size: 0.95rem; line-height: 1.1; text-transform: uppercase; }
+      .inj-company-name span { color: #ef4444; }
+      .inj-company-sub { color: #9ca3af; font-size: 0.55rem; font-weight: 600; letter-spacing: 1px; margin-top: 2px; text-transform: uppercase; }
+
+      /* Botão do header compacto */
+      .inj-hbtn { font-size: 0.7rem !important; padding: 7px 10px !important; white-space: nowrap !important; }
+
+      /* Logo menor no mobile */
+      img[src*="logo-borracharia"] { max-height: 42px !important; width: auto !important; }
+
+      /* Botões Hero */
+      .inj-btn {
+        display: flex !important; align-items: center !important;
+        padding: 12px 14px !important; border-radius: 10px !important;
+        width: 100% !important; margin-bottom: 10px !important;
+        box-sizing: border-box !important; text-decoration: none !important;
+      }
+      .inj-btn > *:not(.inj-row) { display: none !important; }
+      .inj-row { display: flex !important; align-items: center !important; width: 100% !important; gap: 10px !important; }
+
+      .inj-red { background: linear-gradient(90deg, #dc2626, #991b1b) !important; border: none !important; box-shadow: 0 4px 18px rgba(220,38,38,0.4) !important; }
+      .inj-dark { background: #0f0f0f !important; border: 1.5px solid #dc2626 !important; }
+
+      .inj-ico { flex: 0 0 26px; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; }
+      .inj-txt { flex: 1; display: flex; flex-direction: column; align-items: flex-start; overflow: hidden; }
+      .inj-ttl { color: #fff !important; font-weight: 800 !important; font-size: 0.85rem !important; line-height: 1.2 !important; white-space: nowrap !important; display: block !important; }
+      .inj-sub { color: #fca5a5 !important; font-size: 0.62rem !important; font-weight: 500 !important; white-space: nowrap !important; display: block !important; margin-top: 1px !important; }
+      .inj-dark .inj-sub { color: #9ca3af !important; }
+      .inj-arr { flex: 0 0 24px; width: 24px; height: 24px; background: rgba(255,255,255,0.15); border-radius: 6px; display: flex; align-items: center; justify-content: center; }
+      .inj-dark .inj-arr { background: rgba(255,255,255,0.08); }
     </style>
 </head>
 <body>
     <div id="root"></div>
-    <style>
-      /* Estilos Premium para o Header */
-      .mobile-company-container {
-        display: flex;
-        flex-direction: column;
-        margin-left: 12px;
-        font-family: 'Plus Jakarta Sans', sans-serif;
-      }
-      .mobile-company-title {
-        color: white;
-        font-weight: 900;
-        font-size: 1.2rem;
-        line-height: 1.1;
-        letter-spacing: 0.5px;
-      }
-      .mobile-company-subtitle {
-        color: #9ca3af;
-        font-size: 0.7rem;
-        font-weight: 600;
-        letter-spacing: 1px;
-        margin-top: 2px;
-      }
-      @media (max-width: 640px) {
-        .mobile-company-title { font-size: 0.85rem; }
-        .mobile-company-subtitle { font-size: 0.5rem; }
-        img[src*="logo-borracharia"] { max-height: 45px !important; width: auto !important; }
-      }
 
-      /* Estilos Premium para os Botões */
-      .premium-btn {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        padding: 12px 16px !important;
-        border-radius: 12px !important;
-        text-align: left !important;
-        width: 100% !important;
-        max-width: 450px !important;
-        gap: 12px;
-        transition: all 0.2s;
-        border: 1px solid transparent;
-        margin-bottom: 12px !important;
-      }
-      
-      .premium-btn-urgent {
-        background: linear-gradient(90deg, #dc2626 0%, #991b1b 100%) !important;
-        box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4) !important;
-      }
-
-      .premium-btn-secondary {
-        background: #111 !important;
-        border: 1px solid #dc2626 !important;
-      }
-
-      .premium-btn-content {
-        display: flex;
-        flex-direction: column;
-        flex: 1;
-      }
-
-      .premium-btn-title {
-        color: white;
-        font-weight: 800;
-        font-size: 1.05rem;
-        line-height: 1.2;
-      }
-
-      .premium-btn-subtitle {
-        color: #fca5a5;
-        font-size: 0.75rem;
-        font-weight: 500;
-      }
-      .premium-btn-secondary .premium-btn-subtitle {
-        color: #9ca3af;
-      }
-
-      .premium-btn-icon-left {
-        width: 32px;
-        height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .premium-btn-icon-right {
-        width: 32px;
-        height: 32px;
-        background: white;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #dc2626;
-      }
-      
-      .premium-btn-secondary .premium-btn-icon-right {
-        background: #222;
-        color: white;
-      }
-
-      /* Botão do header atualizado */
-      .header-call-btn {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        gap: 6px !important;
-        background: #dc2626 !important;
-        padding: 8px 14px !important;
-        border-radius: 8px !important;
-        font-weight: 700 !important;
-        color: white !important;
-        text-decoration: none !important;
-      }
-    </style>
     <script>
-      const svgWpp = '<svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>';
-      const svgCalc = '<svg viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" width="28" height="28"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="14.01"></line><line x1="12" y1="14" x2="12" y2="14.01"></line><line x1="8" y1="14" x2="8" y2="14.01"></line><line x1="16" y1="18" x2="16" y2="18.01"></line><line x1="12" y1="18" x2="12" y2="18.01"></line><line x1="8" y1="18" x2="8" y2="18.01"></line><line x1="16" y1="10" x2="16" y2="10.01"></line><line x1="12" y1="10" x2="12" y2="10.01"></line><line x1="8" y1="10" x2="8" y2="10.01"></line></svg>';
-      const svgArrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><polyline points="9 18 15 12 9 6"></polyline></svg>';
-      const svgWppSmall = '<svg viewBox="0 0 24 24" fill="white" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>';
+    (function() {
+      var WPP = '<svg viewBox="0 0 24 24" fill="white" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51h-.57c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
+      var CALC = '<svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2" width="22" height="22"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/></svg>';
+      var ARR = '<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" width="14" height="14"><polyline points="9 18 15 12 9 6"/></svg>';
 
-      const observer = new MutationObserver(() => {
-        // 1. Header Logo & Texts
-        const logo = document.querySelector('img[src*="logo-borracharia"]');
-        if (logo && !document.querySelector('.mobile-company-container')) {
-          const div = document.createElement('div');
-          div.className = 'mobile-company-container';
-          div.innerHTML = '<div class="mobile-company-title">BORRACHARIA <span style="color:#dc2626;">MÓVEL</span></div><div class="mobile-company-subtitle">24 HORAS &bull; CURITIBA - PR</div>';
-          
-          const parent = logo.parentElement;
-          if (parent) {
-            parent.style.display = 'flex';
-            parent.style.alignItems = 'center';
-            parent.style.textDecoration = 'none';
-            parent.appendChild(div);
+      function inject() {
+        // 1. Logo + nome
+        var logo = document.querySelector('img[src*="logo-borracharia"]');
+        if (logo && !document.querySelector('.inj-company')) {
+          var p = logo.parentElement;
+          if (p) {
+            p.classList.add('inj-logo-wrap');
+            var d = document.createElement('div');
+            d.className = 'inj-company';
+            d.innerHTML = '<div class="inj-company-name">Borracharia <span>M\u00f3vel</span></div><div class="inj-company-sub">24 Horas &bull; Curitiba&nbsp;-&nbsp;PR</div>';
+            p.appendChild(d);
           }
         }
 
-        // 2. Header Button (WhatsApp)
-        const headerBtn = document.querySelector('header a, header button, nav a, nav button, [class*="top"] a, [class*="top"] button, [class*="Header"] a');
-        if (headerBtn && !headerBtn.classList.contains('header-call-btn') && headerBtn.textContent.includes('CHAMAR AGORA')) {
-          headerBtn.classList.add('header-call-btn');
-          headerBtn.innerHTML = svgWppSmall + ' <span>CHAMAR AGORA</span>';
-        } else if (headerBtn && !headerBtn.classList.contains('header-call-btn') && headerBtn.textContent.includes('URGENTE')) {
-          headerBtn.classList.add('header-call-btn');
-          headerBtn.innerHTML = svgWppSmall + ' <span>CHAMAR AGORA</span>';
+        // 2. Botão do header
+        var all = Array.from(document.querySelectorAll('a, button'));
+        var hb = all.find(function(el) {
+          return !el.classList.contains('inj-hbtn') && (el.textContent.includes('SOLICITAR') || el.textContent.includes('URGENTE')) && (el.closest('header') || el.closest('nav'));
+        });
+        if (hb) { hb.classList.add('inj-hbtn'); hb.textContent = 'CHAMAR AGORA'; }
+
+        // 3. Botão urgente (hero)
+        var ub = all.find(function(el) {
+          return !el.classList.contains('inj-btn') && el.textContent.includes('URGENTE') && !el.closest('header') && !el.closest('nav');
+        });
+        if (ub) {
+          ub.classList.add('inj-btn', 'inj-red');
+          var r = document.createElement('div'); r.className = 'inj-row';
+          r.innerHTML = '<div class="inj-ico">'+WPP+'</div><div class="inj-txt"><span class="inj-ttl">SOLICITAR SERVI\u00c7O URGENTE</span><span class="inj-sub">Atendimento imediato via WhatsApp</span></div><div class="inj-arr">'+ARR+'</div>';
+          ub.appendChild(r);
         }
 
-        // 3. Main Hero Buttons (Urgent & Orcamento)
-        const buttons = Array.from(document.querySelectorAll('a, button'));
-        
-        // Urgent Button
-        const urgentBtn = buttons.find(el => (el.textContent.includes('SOLICITAR SERVIÇO URGENTE') || el.textContent.includes('URGENTE')) && !el.closest('nav, header, [class*="top"]'));
-        if (urgentBtn && !urgentBtn.classList.contains('premium-btn')) {
-          urgentBtn.classList.add('premium-btn', 'premium-btn-urgent');
-          urgentBtn.innerHTML = `
-            <div class="premium-btn-icon-left">${svgWpp}</div>
-            <div class="premium-btn-content">
-              <span class="premium-btn-title">SOLICITAR SERVIÇO URGENTE</span>
-              <span class="premium-btn-subtitle">Atendimento imediato via WhatsApp</span>
-            </div>
-            <div class="premium-btn-icon-right">${svgArrow}</div>
-          `;
-          // Remove custom styles to avoid overriding
-          urgentBtn.style.padding = '';
+        // 4. Botão orçamento (hero)
+        var ob = all.find(function(el) {
+          return !el.classList.contains('inj-btn') && el.textContent.includes('OR\u00c7AMENTO') && !el.closest('header') && !el.closest('nav');
+        });
+        if (ob) {
+          ob.classList.add('inj-btn', 'inj-dark');
+          var r2 = document.createElement('div'); r2.className = 'inj-row';
+          r2.innerHTML = '<div class="inj-ico">'+CALC+'</div><div class="inj-txt"><span class="inj-ttl">SOLICITAR OR\u00c7AMENTO</span><span class="inj-sub">Fale com nossa equipe</span></div><div class="inj-arr">'+ARR+'</div>';
+          ob.appendChild(r2);
         }
+      }
 
-        // Orcamento Button
-        const orcBtn = buttons.find(el => el.textContent.includes('SOLICITAR ORÇAMENTO') && !el.closest('nav, header, [class*="top"]'));
-        if (orcBtn && !orcBtn.classList.contains('premium-btn')) {
-          orcBtn.classList.add('premium-btn', 'premium-btn-secondary');
-          orcBtn.innerHTML = `
-            <div class="premium-btn-icon-left">${svgCalc}</div>
-            <div class="premium-btn-content">
-              <span class="premium-btn-title">SOLICITAR ORÇAMENTO</span>
-              <span class="premium-btn-subtitle">Fale com nossa equipe</span>
-            </div>
-            <div class="premium-btn-icon-right">${svgArrow}</div>
-          `;
-        }
-      });
-      observer.observe(document.body, { childList: true, subtree: true });
+      var obs = new MutationObserver(inject);
+      obs.observe(document.body, { childList: true, subtree: true });
+    })();
     </script>
 </body>
 </html>
