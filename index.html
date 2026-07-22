@@ -8,6 +8,53 @@
     <meta name="keywords" content="borracharia móvel, borracharia curitiba, pneus, troca de pneus, borracharia 24h, auto socorro, pneu furado">
     <meta name="theme-color" content="#D32F2F">
     
+    <!-- Open Graph / WhatsApp / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seusite.onrender.com/"> <!-- Substitua pelo seu domínio depois -->
+    <meta property="og:title" content="Borracharia Móvel - Atendimento 24 Horas em Curitiba">
+    <meta property="og:description" content="Borracharia Móvel - Atendimento 24 horas em Curitiba. Socorro rápido para pneus furados de carros, motos e caminhões.">
+    <meta property="og:image" content="https://seusite.onrender.com/assets/logo-borracharia-movel-completa_96accbcb.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://seusite.onrender.com/">
+    <meta property="twitter:title" content="Borracharia Móvel - Atendimento 24 Horas">
+    <meta property="twitter:description" content="Socorro rápido 24 horas em Curitiba para pneu furado.">
+    <meta property="twitter:image" content="https://seusite.onrender.com/assets/logo-borracharia-movel-completa_96accbcb.png">
+
+    <!-- Schema.org (Google Local SEO - Ouro para Borracharias) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "Borracharia Móvel 24 Horas Curitiba",
+      "image": "https://seusite.onrender.com/assets/logo-borracharia-movel-completa_96accbcb.png",
+      "url": "https://seusite.onrender.com/",
+      "telephone": "", 
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -25.4284,
+        "longitude": -49.2733
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$",
+      "description": "Serviço de borracharia móvel 24 horas em Curitiba e região."
+    }
+    </script>
+
     <link rel="icon" type="image/png" href="assets/logo-borracharia-movel-completa_96accbcb.png">
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
@@ -145,5 +192,54 @@
 </head>
 <body>
     <div id="root"></div>
+    <style>
+      /* Estilos para o nome da empresa na logo */
+      .mobile-company-name {
+        color: white;
+        font-weight: 800;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        margin-left: 10px;
+        line-height: 1.1;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+      }
+      
+      @media (max-width: 640px) {
+        .mobile-company-name {
+          font-size: 0.8rem;
+        }
+        /* Reduz um pouco a logo no celular para caber o texto e o botão */
+        img[src*="logo-borracharia"] {
+          max-height: 50px !important;
+          width: auto !important;
+        }
+      }
+      @media (min-width: 641px) {
+        .mobile-company-name {
+          font-size: 1.1rem;
+        }
+      }
+    </style>
+    <script>
+      // Injeta o nome da empresa ao lado da logo assim que o React carregar
+      const observer = new MutationObserver(() => {
+        const logo = document.querySelector('img[src*="logo-borracharia"]');
+        if (logo && !document.querySelector('.mobile-company-name')) {
+          const span = document.createElement('span');
+          span.className = 'mobile-company-name';
+          span.innerHTML = 'Borracharia<br>Móvel';
+          
+          const parent = logo.parentElement;
+          if (parent) {
+            parent.style.display = 'flex';
+            parent.style.alignItems = 'center';
+            parent.style.textDecoration = 'none';
+            parent.appendChild(span);
+          }
+        }
+      });
+      observer.observe(document.body, { childList: true, subtree: true });
+    </script>
 </body>
 </html>
