@@ -198,7 +198,7 @@
         color: white;
         font-weight: 800;
         font-family: 'Plus Jakarta Sans', sans-serif;
-        margin-left: 10px;
+        margin-left: 8px;
         line-height: 1.1;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -207,11 +207,11 @@
       
       @media (max-width: 640px) {
         .mobile-company-name {
-          font-size: 0.8rem;
+          font-size: 0.75rem;
         }
-        /* Reduz um pouco a logo no celular para caber o texto e o botão */
+        /* Reduz mais a logo no celular para caber tudo */
         img[src*="logo-borracharia"] {
-          max-height: 50px !important;
+          max-height: 40px !important;
           width: auto !important;
         }
       }
@@ -222,7 +222,7 @@
       }
     </style>
     <script>
-      // Injeta o nome da empresa ao lado da logo assim que o React carregar
+      // Injeta o nome da empresa ao lado da logo e arruma o botão
       const observer = new MutationObserver(() => {
         const logo = document.querySelector('img[src*="logo-borracharia"]');
         if (logo && !document.querySelector('.mobile-company-name')) {
@@ -236,6 +236,19 @@
             parent.style.alignItems = 'center';
             parent.style.textDecoration = 'none';
             parent.appendChild(span);
+          }
+        }
+        
+        // Corrige o botão gigante no celular que está empurrando tudo
+        if (window.innerWidth <= 640) {
+          const buttons = Array.from(document.querySelectorAll('a, button'));
+          const urgentBtn = buttons.find(el => el.textContent.includes('SOLICITAR SERVIÇO URGENTE') && el.closest('nav, header, [class*="top"]'));
+          
+          if (urgentBtn && urgentBtn.textContent !== 'CHAMAR AGORA') {
+            urgentBtn.textContent = 'CHAMAR AGORA';
+            urgentBtn.style.fontSize = '0.75rem';
+            urgentBtn.style.padding = '8px 12px';
+            urgentBtn.style.textAlign = 'center';
           }
         }
       });
