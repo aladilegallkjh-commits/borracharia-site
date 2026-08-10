@@ -246,7 +246,7 @@
         var hb = all.find(function(el) {
           return !el.classList.contains('inj-hbtn') && (el.textContent.includes('SOLICITAR') || el.textContent.includes('URGENTE')) && (el.closest('header') || el.closest('nav'));
         });
-        if (hb) { hb.classList.add('inj-hbtn'); hb.textContent = 'CHAMAR AGORA'; hb.onclick = function(e) { e.preventDefault(); e.stopPropagation(); window.open('https://wa.me/5541998923500?text=Ol%C3%A1%21+Preciso+de+atendimento+da+borracharia+m%C3%B3vel.+Minha+localiza%C3%A7%C3%A3o+%C3%A9%3A', '_blank'); }; }
+        if (hb) { hb.classList.add('inj-hbtn'); hb.textContent = 'CHAMAR AGORA'; }
 
         // 3. Botão urgente (hero)
         var ub = all.find(function(el) {
@@ -257,7 +257,6 @@
           var r = document.createElement('div'); r.className = 'inj-row';
           r.innerHTML = '<div class="inj-ico">'+WPP+'</div><div class="inj-txt"><span class="inj-ttl">SOLICITAR SERVI\u00c7O URGENTE</span><span class="inj-sub">Atendimento imediato via WhatsApp</span></div><div class="inj-arr">'+ARR+'</div>';
           ub.appendChild(r);
-          ub.onclick = function(e) { e.preventDefault(); e.stopPropagation(); window.open('https://wa.me/5541998923500?text=Ol%C3%A1%21+Preciso+de+um+socorro+urgente+da+borracharia.+Minha+localiza%C3%A7%C3%A3o+%C3%A9%3A', '_blank'); };
         }
 
         // 4. Botão orçamento (hero)
@@ -269,7 +268,6 @@
           var r2 = document.createElement('div'); r2.className = 'inj-row';
           r2.innerHTML = '<div class="inj-ico">'+CALC+'</div><div class="inj-txt"><span class="inj-ttl">SOLICITAR OR\u00c7AMENTO</span><span class="inj-sub">Fale com nossa equipe</span></div><div class="inj-arr">'+ARR+'</div>';
           ob.appendChild(r2);
-          ob.onclick = function(e) { e.preventDefault(); e.stopPropagation(); window.open('https://wa.me/5541998923500?text=Ol%C3%A1%21+Gostaria+de+solicitar+um+or%C3%A7amento+com+a+borracharia.', '_blank'); };
         }
       }
 
